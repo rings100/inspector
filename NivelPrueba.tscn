@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c845xrbhluqlp"]
+
+[ext_resource type="PackedScene" uid="uid://dasynq6yok68p" path="res://Player.tscn" id="1_s040l"]
+
+[node name="NivelPrueba" type="Node3D" unique_id=1172735061]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=632006514]
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="Player" parent="." unique_id=479266502 instance=ExtResource("1_s040l")]
+transform = Transform3D(1, 0, 0, 0, 0.9983834, 0.056838434, 0, -0.056838434, 0.9983834, 0, 3.0813065, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=687636315]
+transform = Transform3D(1, 0, 0, 0, 0.9848078, 0.1736482, 0, -0.1736482, 0.9848078, 2.696343, 8.034972, 7.1216273)
+light_energy = 5.282
